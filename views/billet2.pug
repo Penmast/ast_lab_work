@@ -3,19 +3,19 @@ html
   head
     meta(charset="UTF-8")
     title= "Chèvre land"
-    link(rel="stylesheet" href="css/style.css")
-    link(rel="stylesheet" href="css/billet2.css")
+    link(rel="stylesheet" href="public/css/style.css")
+    link(rel="stylesheet" href="public/css/billet2.css")
 
   body
     header
       h1 Le pays de la chèvre
-      a(href="index.html")
-        img(src="img/pixelgoat.png", alt="pixel goat")
+      a(href="/")
+        img(src="public/img/pixelgoat.png", alt="pixel goat")
 
     main
-      h2 Valeur sûres en matière de nourriture chèvrières
+      h2 Valeurs sûres en matière de nourriture chèvrières
       ul
         -  for (var x = 1; x < 11; x++)
           li
-            a(href="img/goatfood" + x + ".jpg")
-              img(src="img/goatfood" + x + ".jpg", alt="goat food")
+            a(href="public/img/goatfood" + x + ".jpg")
+              img(src="public/img/goatfood" + x + ".jpg", alt="goat food")

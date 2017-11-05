@@ -23,9 +23,9 @@ module.exports =
         renderResource "index.html", "html", res
       when "public"
         renderResource filename, filetype, res
-      when "billet1.html"
+      when "billet1"
         renderResource "billet1.html", "html", res
-      when "billet2.html"
+      when "billet2"
         renderResource "billet2.html", "html", res
       else
         res.writeHead 404,
