@@ -1,7 +1,11 @@
 #!/bin/bash
 
 # node lib/index.js
-bin/compile pug
-bin/compile stylus
-bin/compile coffee
+if [ "$1" != "-l" ];
+then
+  bin/compile pug
+  bin/compile stylus
+  bin/compile coffee
+fi
 node_modules/.bin/coffee src/index.coffee
+

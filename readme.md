@@ -16,6 +16,9 @@ Installer les packages:
 Lancer le serveur:
 > npm start
 
+Lancer le serveur sans compiler:
+> npm start -l
+
 Consulter le blog:
 > localhost:4444
 
