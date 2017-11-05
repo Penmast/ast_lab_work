@@ -5,11 +5,15 @@ pug = require 'pug'
 renderResource = (filename, type, res, callback) ->
   console.log "rendering resource #{filename} of type #{type}"
   fs.readFile "public/#{type}/#{filename}", (err, file) ->
-    throw err if err
-    res.writeHead 200,
-      'Content-Type': "text/#{type}"
-    res.write file
-    res.end()
+    if err && type!="img"
+      throw err
+    if err && type=="img"
+      console.log("image #{filename} not found")
+    else
+      res.writeHead 200,
+        'Content-Type': "text/#{type}"
+      res.write file
+      res.end()
 
 module.exports =
 
