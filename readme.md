@@ -1,7 +1,7 @@
 
 # AST 2017
 
-Simple blog nodejs avec transcripts
+Simple blog nodejs avec transcripts. Le blog utilise CoffeeScript, Stylus et Pug.
 
 ## Contributors
 
@@ -9,17 +9,15 @@ David Deray
 Mégane Pau
 
 ## Instructions
+
+Installer les packages:
+> npm install
+
 Lancer le serveur:
->bin/start
+> npm start
 
-Compiler les fichiers en html:
->bin/compile pug
-
-Compiler les fichiers en css:
->bin/compile stylus
-
-Compiler les fichiers en js:
->bin/compile coffee
+Consulter le blog:
+> localhost:4444
 
 ## License
 
