@@ -1,0 +1,60 @@
+main
+  width: 50%
+  display: flex
+  flex-direction: column
+
+  &>section, aside, footer
+    background: #f2f1de /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(-90deg, #f2f1de, #fffed4) /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(-90deg, #f2f1de, #fffed4) /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(-90deg, #f2f1de, #fffed4) /* For Firefox 3.6 to 15 */
+    background: linear-gradient(-90deg, #f2f1de, #fffed4) /* Standard syntax */
+    border: 1px solid transparent
+    border-radius: 15px
+    opacity: 0.7
+
+
+  &>section
+    margin-bottom: 20px
+    padding: 20px
+    transition : opacity 2s, transform 2s
+
+    &:hover
+      opacity : 0.9
+      transform: translateX(20%)
+
+aside
+  padding: 10px
+  display: flex
+  flex-wrap: wrap
+  justify-content: center
+  width: 35%
+  transition: opacity 1s
+
+  &:hover
+    opacity: 0.9
+
+
+  img
+    height: 200px
+    width: 200px
+    margin: 10px
+    opacity: 1
+    transition: height 1s, width 1s
+
+
+    &:hover
+      height: 205px
+      width: 205px
+      opacity: 1
+
+
+#flexbox
+  display: flex
+  flex-direction: row
+  justify-content: space-between
+  margin-top: 8%
+
+a
+  color: black
+  text-decoration: none
