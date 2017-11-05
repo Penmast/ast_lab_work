@@ -1,0 +1,24 @@
+{
+  "name": "ast_lab_work",
+  "description": "simple blog",
+  "version": "0.0.1",
+  "scripts": {
+    "start": "./bin/start",
+    "test": "./bin/test tests/*",
+    "compile": "./bin/compile"
+  },
+  "dependencies": {
+    "coffee-script": "^1.12.7",
+    "describe": "^1.2.0",
+    "mocha": "^4.0.1",
+    "morgan": "^1.9.0",
+    "pug": "^2.0.0-rc.4",
+    "pug-cli": "^1.0.0-alpha6",
+    "should": "^13.1.2",
+    "stylus": "^0.54.5"
+  },
+  "devDependencies": {
+    "mocha": "^4.0.1",
+    "should": "^13.1.1"
+  }
+}
