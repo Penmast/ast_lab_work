@@ -3,14 +3,14 @@ html
   head
     meta(charset="UTF-8")
     title= "Chèvre land"
-    link(rel="stylesheet", href="css/style.css")
-    link(rel="stylesheet", href="css/index.css")
+    link(rel="stylesheet" href="public/css/style.css")
+    link(rel="stylesheet" href="public/css/index.css")
 
   body
     header
       h1 Le pays de la chèvre
       a(href="index.html")
-        img(src="img/pixelgoat.png", alt="pixel goat")
+        img(src="public/img/pixelgoat.png", alt="pixel goat")
 
     #flexbox
       main
@@ -26,5 +26,5 @@ html
 
       aside(id="images")
         -  for (var x = 1; x < 9; x++)
-          a(target="_blank", href="img/goat" + x + ".jpg")
-            img(src="img/goat" + x + ".jpg", alt="goat image")
+          a(target="_blank", href="public/img/goat" + x + ".jpg")
+            img(src="public/img/goat" + x + ".jpg", alt="goat image")
