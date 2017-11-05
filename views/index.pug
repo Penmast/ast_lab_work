@@ -1,1 +1,30 @@
 doctype html
+html
+  head
+    meta(charset="UTF-8")
+    title= "Chèvre land"
+    link(rel="stylesheet", href="css/style.css")
+    link(rel="stylesheet", href="css/index.css")
+
+  body
+    header
+      h1 Le pays de la chèvre
+      a(href="index.html")
+        img(src="img/pixelgoat.png", alt="pixel goat")
+
+    #flexbox
+      main
+        section
+          a(href="billet1.html")
+            h2 La tour de la chèvre
+          p Méconnu de tous, il existe un bâtiment que l'on retrouve à plusieurs endroits du monde, dans des civilisations pourtant isolées? La seule chose qu'on sait de ces curieux édifices sont leur noms, toujours noté sur la plus haute marche : la "Tour des chèvres". Tentons de percer ce mystère en recoupant plusieurs sources d'informations.
+
+        section
+          a(href="billet2.html")
+            h2 La meilleure nourriture pour vos chèvres
+          p L'alimentation de notre petite herbivore est avant tout composée de fibres végétales qu'elle sélectionne avec soin (tiges et feuilles de plantes ligneuses, herbe et/ou foin), seuls garants du bon fonctionnement digestif. Les concentrés (granulés, céréales) et friandises ne seront qu'une complémentation minime !
+
+      aside(id="images")
+      -  for (var x = 1; x < 9; x++)
+        a(target="_blank", href="img/goat" + x + ".jpg")
+          img(src="img/goat" + x + ".jpg", alt="goat image")
